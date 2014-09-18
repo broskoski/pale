@@ -1,0 +1,12 @@
+{
+  "name": "pale",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": "^4.9.1",
+    "request": "^2.42.0",
+    "qs": "^2.2.3"
+  }
+}
