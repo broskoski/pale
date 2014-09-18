@@ -1,4 +1,4 @@
-var app, embedlyKey, endpoint, express, port, qs, request;
+var app, express, port, qs, request;
 
 express = require('express');
 
