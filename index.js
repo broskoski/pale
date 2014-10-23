@@ -8,7 +8,7 @@ request = require('request');
 
 qs = require('qs');
 
-app.get('/resize/:url/:width/:height', function(req, res) {
+app.get('/resize/:width/:height/:url', function(req, res) {
   var queryString, url;
   url = decodeURIComponent(req.params.url);
   queryString = qs.stringify({
