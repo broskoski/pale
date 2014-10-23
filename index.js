@@ -16,7 +16,7 @@ app.get('/resize/:width/:height/:url', function(req, res) {
     key: process.env.EMBEDLY_KEY,
     width: req.params.width,
     height: req.params.height,
-    quality: 95
+    quality: req.query.quality || 95
   });
   url = process.env.ENDPOINT + '?' + queryString;
   req.pipe(request(url)).pipe(res);
