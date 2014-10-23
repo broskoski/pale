@@ -19,6 +19,7 @@ app.get('/resize/:width/:height/:url', function(req, res) {
     quality: req.query.quality || 95
   });
   url = process.env.ENDPOINT + '?' + queryString;
+  res.setHeader('Cache-Control', 'public, max-age=31557600');
   req.pipe(request(url)).pipe(res);
 });
 
