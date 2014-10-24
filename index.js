@@ -8,6 +8,15 @@ request = require('request');
 
 qs = require('qs');
 
+app.get('/', function(req, res) {
+  res.send({
+    'Coordinating': 'there',
+    'Events': 'and objects with remote events',
+    'And': 'vanished objects. Making ornaments',
+    'Of': 'accidents and possibilities.'
+  });
+});
+
 app.get('/resize/:width/:height/:url', function(req, res) {
   var queryString, url;
   url = decodeURIComponent(req.params.url);
