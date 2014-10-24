@@ -10,10 +10,10 @@ qs = require('qs');
 
 app.get('/', function(req, res) {
   res.send({
-    'Coordinating': 'there',
-    'Events': 'and objects with remote events',
-    'And': 'vanished objects. Making ornaments',
-    'Of': 'accidents and possibilities.'
+    Coordinating: 'there',
+    Events: 'and objects with remote events',
+    And: 'vanished objects. Making ornaments',
+    Of: 'accidents and possibilities.'
   });
 });
 
